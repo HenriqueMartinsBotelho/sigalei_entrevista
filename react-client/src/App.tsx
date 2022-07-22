@@ -61,7 +61,6 @@ function useUsers() {
             name
             email
             phone
-            password
             avatar
           }
         }
@@ -132,7 +131,6 @@ function RelayUsers() {
           name
           email
           phone
-          password
           avatar
       }
     }
