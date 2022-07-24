@@ -19,10 +19,12 @@
     "axios": "^0.27.2",
     "framer-motion": "^4",
     "graphql-request": "^4.3.0",
+    "msw": "^0.44.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-relay": "^14.0.0",
     "react-scripts": "4.0.3",
+    "react-test-renderer": "^18.2.0",
     "relay": "^0.8.0-1",
     "relay-runtime": "^14.0.0",
     "typescript": "^4.4.4",
@@ -31,8 +33,8 @@
   "scripts": {
     "start": "react-scripts start",
     "relay": "relay-compiler --src ./src --schema ./src/data/schema.graphql --language typescript",
+    "test": "jest --config jest.config.ts ./__tests__",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -55,8 +57,8 @@
   },
   "devDependencies": {
     "@types/react-relay": "^13.0.2",
+    "@types/react-test-renderer": "^18.0.0",
     "@types/relay-runtime": "^13.0.3",
-    "babel-plugin-relay": "^14.0.0",
     "graphql": "^16.5.0",
     "relay-compiler": "^14.0.0"
   }
